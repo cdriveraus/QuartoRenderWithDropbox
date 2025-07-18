@@ -81,9 +81,13 @@ get_active_file <- function() {
 # ----------------------------------------------------------------------------
 
 #' Render the currently active .qmd via scratch directory build.
-render_with_temp <- function(outputtype = NULL) {
+render_with_temp <- function(outputtype = 'default') {
   qmd <- get_active_file()
+  if(outputtype %in% 'default'){
+    render_with_temp_file(qmd)
+  } else {
   render_with_temp_file(qmd, outputtype = outputtype)
+  }
 }
 
 #' Render a specific .qmd file via scratch directory build.
@@ -179,21 +183,23 @@ render_with_temp_file <- function(qmd, outputtype = NULL, ...) {
 }
 
 
+render <- function() {
+  render_with_temp('default')
+}
 
-
-render_with_pause_html <- function() {
+render_html <- function() {
   render_with_temp("html")
 }
 
-render_with_pause_revealjs <- function() {
+render_revealjs <- function() {
   render_with_temp("revealjs")
 }
 
-render_with_pause_pdf <- function() {
+render_pdf <- function() {
   render_with_temp("pdf")
 }
 
-render_with_pause_beamer <- function() {
+render_beamer <- function() {
   render_with_temp("beamer")
 }
 

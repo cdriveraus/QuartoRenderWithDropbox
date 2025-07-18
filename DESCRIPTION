@@ -1,16 +1,15 @@
 Package: QuartoRenderWDropbox
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Rstudio add on to render quarto files on dropbox using temp folders (avoiding file access issues).
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Charles", "Driver",
+      email = "charles.driver@psychologie.uzh.ch",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Rstudio add on to render quarto files on dropbox using temp folders (avoiding file access issues).
+License: MIT
 Encoding: UTF-8
 LazyData: true
