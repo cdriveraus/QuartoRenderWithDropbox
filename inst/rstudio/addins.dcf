@@ -1,0 +1,24 @@
+Name: Render
+Description: Render Quarto outside Dropbox
+Binding: render_with_pause
+Interactive: false
+
+Name: RenderHTML
+Description: Render Quarto as HTML outside Dropbox
+Binding: render_with_pause_html
+Interactive: false
+
+Name: RenderRevealJS
+Description: Render Quarto as RevealJS outside Dropbox
+Binding: render_with_pause_revealjs
+Interactive: false
+
+Name: RenderPDF
+Description: Render Quarto as PDF outside Dropbox
+Binding: render_with_pause_pdf
+Interactive: false
+
+Name: RenderBeamer
+Description: Render Quarto as Beamer outside Dropbox
+Binding: render_with_pause_beamer
+Interactive: false
